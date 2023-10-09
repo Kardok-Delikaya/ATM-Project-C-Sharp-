@@ -80,12 +80,14 @@ public class Account
             Console.WriteLine("Please enter the amount you want to add to your account: ");
             double amount = Double.Parse(Console.ReadLine());
             account.SetBalance(amount);
+            EditAccount();
         }
 
         void WithdrarCurrency(Account account)
         {
             Console.WriteLine("Please enter the amount you want to withdraw from your account: ");
             double amount = Double.Parse(Console.ReadLine());
+
             if (amount <= account.balance)
             {
                 account.SetBalance(-amount);
@@ -94,6 +96,8 @@ public class Account
             {
                 Console.WriteLine("Your balance is not enough for this process.");
             }
+
+            EditAccount();
         }
 
         void ShowBalance(Account account)
@@ -187,48 +191,61 @@ public class Account
             Console.WriteLine("1. Add Currency");
             Console.WriteLine("2. Withdraw Currency");
             Console.WriteLine("3. Show Balance");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. Delete Your Account");
+            Console.WriteLine("5. Exit");
             int pick = int.Parse(Console.ReadLine());
             switch (pick)
             {
                 case 1:
                     AddCurrency(curUser);
-                    EditBalance();
                     break;
                 case 2:
                     WithdrarCurrency(curUser);
-                    EditBalance();
                     break;
                 case 3:
                     ShowBalance(curUser);
                     break;
                 case 4:
+                    DeleteAccount();
+                    break;
+                case 5:
                     ATMScreen();
                     break;
                 default:
                     Console.WriteLine("You have choosed poorly.");
                     break;
             }
-            ATMChoices();
+
+            if (pick != 4)
+            {
+                ATMChoices();
+            }
+            else
+            {
+                ATMScreen();
+            }
         }
 
-        void EditBalance()
+        #region Account Options
+        void EditAccount()
         {
             TextWriter writer = new StreamWriter(@"DataBase.txt");
             for (int i = 0; i < accounts.Count; i++)
             {
-                if (accounts[i].cardNumber == curUser.cardNumber)
-                {
-                    accountInformations[i] = accounts[i].cardNumber + " " + accounts[i].pin + " " + accounts[i].name + " " + accounts[i].surName + " " + accounts[i].balance;
-                    writer.WriteLine(accountInformations[i]);
-                }
-                else
-                {
-                    writer.WriteLine(accountInformations[i]);
-                }
+                accountInformations[i] = accounts[i].cardNumber + " " + accounts[i].pin + " " + accounts[i].name + " " + accounts[i].surName + " " + accounts[i].balance;
+                writer.WriteLine(accountInformations[i]);
+                
             }
             writer.Close();
         }
+
+        void DeleteAccount()
+        {
+            accounts.Remove(curUser);
+
+            EditAccount();
+        }
+        #endregion
 
         ATMScreen();
     }

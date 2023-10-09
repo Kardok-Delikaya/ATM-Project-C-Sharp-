@@ -5,3 +5,10 @@ C:\Users\omerw\source\repos\ATM Project (C Sharp)\ATM Project (C Sharp)\obj\Debu
 C:\Users\omerw\source\repos\ATM Project (C Sharp)\ATM Project (C Sharp)\obj\Debug\ATM Project (C Sharp).csproj.CoreCompileInputs.cache
 C:\Users\omerw\source\repos\ATM Project (C Sharp)\ATM Project (C Sharp)\obj\Debug\ATM Project (C Sharp).exe
 C:\Users\omerw\source\repos\ATM Project (C Sharp)\ATM Project (C Sharp)\obj\Debug\ATM Project (C Sharp).pdb
+C:\Users\omerw\OneDrive\Documents\GitHub\ATM-Project-C-Sharp-\ATM Project (C Sharp)\bin\Debug\ATM Project (C Sharp).exe.config
+C:\Users\omerw\OneDrive\Documents\GitHub\ATM-Project-C-Sharp-\ATM Project (C Sharp)\bin\Debug\ATM Project (C Sharp).exe
+C:\Users\omerw\OneDrive\Documents\GitHub\ATM-Project-C-Sharp-\ATM Project (C Sharp)\bin\Debug\ATM Project (C Sharp).pdb
+C:\Users\omerw\OneDrive\Documents\GitHub\ATM-Project-C-Sharp-\ATM Project (C Sharp)\obj\Debug\ATM Project (C Sharp).csproj.AssemblyReference.cache
+C:\Users\omerw\OneDrive\Documents\GitHub\ATM-Project-C-Sharp-\ATM Project (C Sharp)\obj\Debug\ATM Project (C Sharp).csproj.CoreCompileInputs.cache
+C:\Users\omerw\OneDrive\Documents\GitHub\ATM-Project-C-Sharp-\ATM Project (C Sharp)\obj\Debug\ATM Project (C Sharp).exe
+C:\Users\omerw\OneDrive\Documents\GitHub\ATM-Project-C-Sharp-\ATM Project (C Sharp)\obj\Debug\ATM Project (C Sharp).pdb
